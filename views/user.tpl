@@ -5,8 +5,8 @@
   <title>Beego</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-{{.ID}}
-{{.Hello}}
+%%%.ID%%%
+%%%.Hello%%%
 <body>
 </body>
 </html>
