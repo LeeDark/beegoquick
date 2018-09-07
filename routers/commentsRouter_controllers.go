@@ -9,7 +9,7 @@ func init() {
 
 	beego.GlobalControllerRouter["github.com/LeeDark/beegoquick/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/LeeDark/beegoquick/controllers:UserController"],
 		beego.ControllerComments{
-			Method: "HelloSimple",
+			Method: "Hello",
 			Router: `/users`,
 			AllowHTTPMethods: []string{"get"},
 			MethodParams: param.Make(),
@@ -17,7 +17,7 @@ func init() {
 
 	beego.GlobalControllerRouter["github.com/LeeDark/beegoquick/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/LeeDark/beegoquick/controllers:UserController"],
 		beego.ControllerComments{
-			Method: "HelloCool",
+			Method: "GetUser",
 			Router: `/users/:id`,
 			AllowHTTPMethods: []string{"get"},
 			MethodParams: param.Make(

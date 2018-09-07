@@ -9,19 +9,22 @@ type UserController struct {
 }
 
 func (this *UserController) URLMapping() {
-	this.Mapping("HelloSimple", this.HelloSimple)
+	this.Mapping("Hello", this.Hello)
 }
 
 // @router /users
-func (this *UserController) HelloSimple() {
+func (this *UserController) Hello() {
 	this.Data["Hello"] = "Hello, Sergey!"
 	this.Data["ID"] = 505
 	this.TplName = "user.tpl"
+	this.Render()
 }
 
+// /users/:id?name=...
 // @router /users/:id
-func (this *UserController) HelloCool(id int, name string) {
+func (this *UserController) GetUser(id int, name string) {
 	this.Data["Hello"] = "Hello, " + name + "!"
 	this.Data["ID"] = id
 	this.TplName = "user.tpl"
+	this.Render()
 }
