@@ -7,6 +7,8 @@
 </head>
 %%%.ID%%%
 %%%.Hello%%%
+the username is %%%.user.Name%%%
+the age is %%%.user.Age%%%
 <body>
 </body>
 </html>
