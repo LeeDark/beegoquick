@@ -1,0 +1,9 @@
+.idea/
+
+beegoquick
+
+lastupdate.tmp
+#/routers/commentsRouter_controllers.go
+
+db/dbconf.yml
+/swagger
