@@ -3,7 +3,7 @@
 beegoquick
 
 lastupdate.tmp
-#/routers/commentsRouter_controllers.go
+/routers/commentsRouter_controllers.go
 
 db/dbconf.yml
 /swagger
