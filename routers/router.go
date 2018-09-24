@@ -1,3 +1,7 @@
+// @APIVersion 1.0
+// @Title Beego Quick Solutions
+// @Description Here will be description about project
+// @Contact server.povarnin@gmail.com
 package routers
 
 import (
