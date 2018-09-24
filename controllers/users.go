@@ -17,7 +17,7 @@ func (this *UserController) URLMapping() {
 	this.Mapping("Hello", this.Hello)
 }
 
-// @router /users
+// @router /
 func (this *UserController) Hello() {
 	this.Data["Hello"] = "Hello, Sergey!"
 	this.Data["ID"] = 505
@@ -27,8 +27,7 @@ func (this *UserController) Hello() {
 	this.Render()
 }
 
-// /users/:id?name=...
-// @router /users/:id
+// @router /:id
 func (this *UserController) GetUser(id int, name string) {
 	this.Data["Hello"] = "Hello, " + name + "!"
 	this.Data["ID"] = id
